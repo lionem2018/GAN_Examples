@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53f1a790-fe3f-4b84-a4c5-420c09f2a969" name="Default Changelist" comment="" />
+    <list default="true" id="53f1a790-fe3f-4b84-a4c5-420c09f2a969" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/1_VanillaGANForMNIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/1_VanillaGANForMNIST.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/MNIST_data/t10k-images-idx3-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/MNIST_data/t10k-images-idx3-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/MNIST_data/t10k-labels-idx1-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/MNIST_data/t10k-labels-idx1-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/MNIST_data/train-images-idx3-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/MNIST_data/train-images-idx3-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/MNIST_data/train-labels-idx1-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/MNIST_data/train-labels-idx1-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/000.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/009.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/009.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/019.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/019.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/029.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/029.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/039.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/039.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/049.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/049.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/059.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/059.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/069.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/069.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/079.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/079.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/089.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/089.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/samples/099.png" beforeDir="false" afterPath="$PROJECT_DIR$/lab01_Vanilla_GAN/samples/099.png" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,56 +28,64 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGanForMNIST.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-              <folding>
-                <element signature="e#129#152#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/000.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/029.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/009.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/util/deprecation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="305" selection-start-line="305" selection-end-line="305" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="40" />
-              <folding>
-                <element signature="e#129#152#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.4831261">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="752">
+                  <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#122#145#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="535">
+                    <caret line="208" column="27" selection-start-line="208" selection-start-column="27" selection-end-line="208" selection-end-column="27" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="-540">
+                    <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="446">
+                  <caret line="126" column="72" lean-forward="true" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
+                  <folding>
+                    <element signature="e#129#152#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,16 +94,34 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>X</find>
+      <find>생성기</find>
+      <find>판별기</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST.py" />
         <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/ㅅㄷㄴㅅ.py" />
         <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/test.py" />
         <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGanForMNIST.py" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST.py" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST.md" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/1_VanillaGANForMNIST.md" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/2_VanillaGANForMNIST2.py" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/1_VanillaGANForMNIST.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/2_GenerateMNIST.py" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST/2_GenerateMNIST.md" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.py" />
+        <option value="$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.md" />
+        <option value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.md" />
+        <option value="$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.py" />
       </list>
     </option>
   </component>
@@ -92,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,18 +153,23 @@
             <path>
               <item name="GAN_Examples" type="b2602c69:ProjectViewProjectNode" />
               <item name="GAN_Examples" type="462c0819:PsiDirectoryNode" />
-              <item name="lab01_Vanilla_GAN" type="462c0819:PsiDirectoryNode" />
-              <item name="samples" type="462c0819:PsiDirectoryNode" />
+              <item name="lab02_Conditional_GAN" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab02_Conditional_GAN" />
+      <recent name="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab01_Vanilla_GAN" />
+      <recent name="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab01_Vanilla_GAN\1_VanillaGANForMNIST" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,7 +183,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1_VanillaGANForMNIST">
+  <component name="RunManager" selected="Python.1_SimpleCGANForMNIST">
+    <configuration name="1_SimpleCGANForMNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GAN_Examples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab02_Conditional_GAN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1_SimpleGANForMNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GAN_Examples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab01_Vanilla_GAN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="1_VanillaGANForMNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GAN_Examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,7 +238,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab01_Vanilla_GAN\1_SimpleGANForMNIST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +247,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1_VanillaGanForMNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="2_GenerateMNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GAN_Examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -162,11 +255,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab01_Vanilla_GAN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGanForMNIST.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab02_Conditional_GAN\1_SimpleCGANForMNIST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,7 +268,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="2_VanillaGANForMNIST2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GAN_Examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -183,11 +276,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab01_Vanilla_GAN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGANForMNIST" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab01_Vanilla_GAN\1_VanillaGANForMNIST.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\sslab\Projects\PycharmProjects\GAN_Examples\lab02_Conditional_GAN\1_SimpleCGANForMNIST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,9 +291,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1_SimpleCGANForMNIST" />
+        <item itemvalue="Python.1_SimpleGANForMNIST" />
+        <item itemvalue="Python.2_GenerateMNIST" />
+        <item itemvalue="Python.2_VanillaGANForMNIST2" />
         <item itemvalue="Python.1_VanillaGANForMNIST" />
-        <item itemvalue="Python.1_VanillaGanForMNIST" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -221,29 +316,46 @@
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09968017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23416507" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917467" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23416507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/019.png">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/089.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/util/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5256">
+          <caret line="305" selection-start-line="305" selection-end-line="305" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/029.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/079.png">
@@ -252,44 +364,70 @@
     <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/069.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/089.png">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/049.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/059.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/099.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/000.png">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/039.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/029.png">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/019.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/009.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/util/deprecation.py">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/samples/000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
+        <state relative-caret-position="1762">
+          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/test.py">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="40" />
+        <state relative-caret-position="446">
+          <caret line="126" column="72" lean-forward="true" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
           <folding>
             <element signature="e#129#152#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/1_VanillaGanForMNIST.py">
+    <entry file="file://$PROJECT_DIR$/lab01_Vanilla_GAN/1_SimpleGANForMNIST.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="535">
+            <caret line="208" column="27" selection-start-line="208" selection-start-column="27" selection-end-line="208" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-540">
+            <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab02_Conditional_GAN/1_SimpleCGANForMNIST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="752">
+          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
           <folding>
-            <element signature="e#129#152#0" expanded="true" />
+            <element signature="e#122#145#0" expanded="true" />
           </folding>
         </state>
       </provider>
