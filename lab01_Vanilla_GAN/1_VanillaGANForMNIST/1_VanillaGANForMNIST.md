@@ -2,6 +2,9 @@
 
 ## Vanilla GAN For MNIST
 
+학습 전, samples 파일을 미리 만들어주세요!
+
+
     # 2016년에 가장 관심을 많이 받았던 비감독(Unsupervised) 학습 방법인
     # Generative Adversarial Network(GAN)을 구현해봅니다.
     # https://arxiv.org/abs/1406.2661
