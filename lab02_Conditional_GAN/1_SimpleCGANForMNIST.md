@@ -4,6 +4,8 @@
 
 ## Simple cGan For MNIST
 
+학습 전, samples2 파일을 미리 만들어주세요!
+
     # GAN 모델을 이용해 단순히 랜덤한 숫자를 생성하는 아닌,
     # 원하는 손글씨 숫자를 생성하는 모델을 만들어봅니다.
     # 이런 방식으로 흑백 사진을 컬러로 만든다든가, 또는 선화를 채색한다든가 하는 응용이 가능합니다.
@@ -214,3 +216,4 @@ Epoch: 0099 D loss: 0.7534 G loss: 2.025
 
 - 서적: 골빈 해커의 3분 딥러닝
 - 코드: https://github.com/golbin/TensorFlow-Tutorials/blob/master/09%20-%20GAN/02%20-%20GAN2.py
+- 사진: https://t-lab.tistory.com/29
