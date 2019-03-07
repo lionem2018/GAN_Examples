@@ -212,3 +212,4 @@ Epoch: 0099 D loss: -0.6517 G loss: -1.946
 
 - 서적: 골빈 해커의 3분 딥러닝
 - 코드: https://github.com/golbin/TensorFlow-Tutorials/blob/master/09%20-%20GAN/01%20-%20GAN.py
+- 사진: https://github.com/udacity/deep-learning/blob/master/gan_mnist/Intro_to_GANs_Solution.ipynb
