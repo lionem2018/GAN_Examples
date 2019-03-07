@@ -1,6 +1,8 @@
 # Lab01 Vanilla GAN - (1)
 
-## Vanilla GAN For MNIST
+## Simple Vanilla GAN For MNIST
+
+![picture_gan_diagram](./picture_gan_diagram.png)
 
 학습 전, samples 파일을 미리 만들어주세요!
 

@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("./mnist/data/", one_hot=True)
+mnist = input_data.read_data_sets("./MNIST_data/", one_hot=True)
 
 ##########
 # 옵션 설정
@@ -43,20 +43,16 @@ D_b2 = tf.Variable(tf.zeros([1]))
 
 # Generator(G) 신경망을 구성합니다.
 def generator(noise_z):
-    hidden = tf.nn.relu(
-                    tf.matmul(noise_z, G_W1) + G_b1)
-    output = tf.nn.sigmoid(
-                    tf.matmul(hidden, G_W2) + G_b2)
+    hidden = tf.nn.relu(tf.matmul(noise_z, G_W1) + G_b1)
+    output = tf.nn.sigmoid(tf.matmul(hidden, G_W2) + G_b2)
 
     return output
 
 
 # Discriminator(D) 신경망을 구성합니다.
 def discriminator(inputs):
-    hidden = tf.nn.relu(
-                    tf.matmul(inputs, D_W1) + D_b1)
-    output = tf.nn.sigmoid(
-                    tf.matmul(hidden, D_W2) + D_b2)
+    hidden = tf.nn.relu(tf.matmul(inputs, D_W1) + D_b1)
+    output = tf.nn.sigmoid(tf.matmul(hidden, D_W2) + D_b2)
 
     return output
 
@@ -95,10 +91,8 @@ G_var_list = [G_W1, G_b1, G_W2, G_b2]
 
 # GAN 논문의 수식에 따르면 loss 를 극대화 해야하지만, minimize 하는 최적화 함수를 사용하기 때문에
 # 최적화 하려는 loss_D 와 loss_G 에 음수 부호를 붙여줍니다.
-train_D = tf.train.AdamOptimizer(learning_rate).minimize(-loss_D,
-                                                         var_list=D_var_list)
-train_G = tf.train.AdamOptimizer(learning_rate).minimize(-loss_G,
-                                                         var_list=G_var_list)
+train_D = tf.train.AdamOptimizer(learning_rate).minimize(-loss_D, var_list=D_var_list)
+train_G = tf.train.AdamOptimizer(learning_rate).minimize(-loss_G, var_list=G_var_list)
 
 ##########
 # 신경망 모델 학습
@@ -115,10 +109,8 @@ for epoch in range(total_epoch):
         noise = get_noise(batch_size, n_noise)
 
         # Discriminator와 Generator 신경망을 각각 학습시킵니다.
-        _, loss_val_D = sess.run([train_D, loss_D],
-                                 feed_dict={X: batch_xs, Z: noise})
-        _, loss_val_G = sess.run([train_G, loss_G],
-                                 feed_dict={Z: noise})
+        _, loss_val_D = sess.run([train_D, loss_D], feed_dict={X: batch_xs, Z: noise})
+        _, loss_val_G = sess.run([train_G, loss_G], feed_dict={Z: noise})
 
     print('Epoch:', '%04d' % epoch,
           'D loss: {:.4}'.format(loss_val_D),
