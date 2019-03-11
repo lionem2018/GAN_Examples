@@ -44,7 +44,7 @@ class DCGAN:
         gen_vars = [var for var in train_vars if 'g' in var.name]
 
         self.disc_train = tf.train.AdamOptimizer(lr_disc, beta1=beta1).minimize(self.disc_loss, var_list=disc_vars)
-        self.gen_train = tf.train.AdamOptimizer(lr_disc, beta1=beta1).minimize(self.gen_loss, var_list=gen_vars)
+        self.gen_train = tf.train.AdamOptimizer(lr_gen, beta1=beta1).minimize(self.gen_loss, var_list=gen_vars)
 
     def train(self):
         init = tf.global_variables_initializer()
