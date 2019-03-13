@@ -41,12 +41,10 @@ writer.close()
 
 
 def decode(serialized_example):
-    features = tf.parse_single_example(
-        serialized_example,
-        features={
+    features = tf.parse_single_example(serialized_example, features={
             'image': tf.FixedLenFeature([], tf.string),
             'label': tf.FixedLenFeature([], tf.string),
-        })
+    })
     image = tf.decode_raw(features['image'], tf.float32)
     label = tf.decode_raw(features['label'], tf.uint8)
 
