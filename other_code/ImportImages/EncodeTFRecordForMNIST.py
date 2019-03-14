@@ -1,7 +1,4 @@
-import numpy as np
 import tensorflow as tf
-import math
-import matplotlib.pyplot as plt
 
 mnist = tf.contrib.learn.datasets.load_dataset("mnist")
 
@@ -38,34 +35,3 @@ for idx in range(test_data_length):
  }))
     writer.write(tfrecord_obj.SerializeToString())
 writer.close()
-
-
-def decode(serialized_example):
-    features = tf.parse_single_example(serialized_example, features={
-            'image': tf.FixedLenFeature([], tf.string),
-            'label': tf.FixedLenFeature([], tf.string),
-    })
-    image = tf.decode_raw(features['image'], tf.float32)
-    label = tf.decode_raw(features['label'], tf.uint8)
-
-    # image = tf.cast(image, tf.int32)
-    # image = tf.reshape(image, shape)
-    return image, label
-
-
-train_dataset = tf.data.TFRecordDataset("./MNIST-data/tfrecords/train.tfrecord")
-train_dataset = train_dataset.map(decode)
-train_dataset = train_dataset.repeat()
-
-test_dataset = tf.data.TFRecordDataset("./MNIST-data/tfrecords/test.tfrecord")
-test_dataset = test_dataset.map(decode)
-test_dataset = test_dataset.repeat()
-
-iterator = train_dataset.make_one_shot_iterator()
-next_element = iterator.get_next()
-
-sess = tf.Session()
-for i in range(train_data_length):
-    image, label = sess.run(next_element)
-    assert(np.array_equal(image, mnist.train.images[i]))
-sess.close()

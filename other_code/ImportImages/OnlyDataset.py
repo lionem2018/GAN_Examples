@@ -57,19 +57,18 @@ def change_file_to_tfrecord(subset_dir, one_hot=True, sample_size=None):
 n_epoch = 3
 batch_size = 2
 
-tr_dataset = change_file_to_tfrecord('./asirra/train/', sample_size=100)
+tr_dataset = change_file_to_tfrecord('./MNIST-data/TestImage')
 
 tr_iterator = tr_dataset.make_initializable_iterator()
 
-X, y = tr_iterator.get_next()
+next_element = tr_iterator.get_next()
 
 with tf.Session() as sess:
     sess.run(tr_iterator.initializer)
 
-    for i in range(100):
-        X_data = sess.run(X)
-        y_data = sess.run(y)
+    for i in range(20):
+        X_data, y_data = sess.run(next_element)
 
-        if i % 10 == 0:
+        if i % 5 == 0:
             plt.imshow(X_data.reshape(256, 256, 3), interpolation='nearest')
             plt.show()
