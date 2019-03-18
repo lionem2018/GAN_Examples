@@ -107,27 +107,19 @@ def show_train_hist(hist, show = False, save = False, path = 'Train_hist.png'):
     else:
         plt.close()
 
-def get_image(files, num_classes):
+
+def get_image(serialized_example, num_classes):
     """This method defines the retrieval image examples from TFRecords files.
     Here we will define how the images will be represented (grayscale,
     flattened, floating point arrays) and how labels will be represented
     (one-hot vectors).
     """
 
-    # Convert filenames to a queue for an input pipeline.
-    file_queue = tf.train.string_input_producer(files)
-
-    # Create object to read TFRecords.
-    reader = tf.TFRecordReader()
-
-    # Read the full set of features for a single example.
-    key, example = reader.read(file_queue)
-
     # Parse the example to get a dict mapping feature keys to tensors.
     # image/class/label: integer denoting the index in a classification layer.
     # image/encoded: string containing JPEG encoded image
     features = tf.parse_single_example(
-        example,
+        serialized_example,
         features={
             'image/class/label': tf.FixedLenFeature([], tf.int64),
             'image/encoded': tf.FixedLenFeature([], dtype=tf.string,
@@ -178,14 +170,14 @@ print('Processing data...')
 
 tf_record_pattern = os.path.join(DEFAULT_TFRECORDS_DIR, '%s-*' % 'train')
 train_data_files = tf.gfile.Glob(tf_record_pattern)
-label, image = get_image(train_data_files, num_classes)
+dataset = tf.data.TFRecordDataset(train_data_files)
+dataset = dataset.map(lambda x: get_image(x, num_classes))
+dataset = dataset.repeat(train_epoch)
+dataset = dataset.shuffle(buffer_size=30)
+dataset = dataset.batch(batch_size)
 
-
-# Associate objects with a randomly selected batch of labels and images.
-image_batch, label_batch = tf.train.shuffle_batch(
-    [image, label], batch_size=batch_size,
-    capacity=2000,
-    min_after_dequeue=1000)
+iterator = dataset.make_initializable_iterator()
+next_element = iterator.get_next()
 
 # variables : input
 x = tf.placeholder(tf.float32, shape=(None, 4096))
@@ -247,8 +239,9 @@ for epoch in range(train_epoch):
     D_losses = []
     epoch_start_time = time.time()
     for iter in range(503370 // batch_size): # training_images//batchsize
+
         # Get a random batch of images and labels.
-        train_images, train_labels = sess.run([image_batch, label_batch])
+        train_images, train_labels = sess.run(next_element)
         #print('Got data!')
         # Get images, reshape and rescale to pass to D
         train_images = train_images.reshape((batch_size, 4096))

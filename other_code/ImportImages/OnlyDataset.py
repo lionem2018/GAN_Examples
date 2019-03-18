@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 # load asirra image
-def change_file_to_tfrecord(subset_dir, one_hot=True, sample_size=None):
+def change_file_to_dataset(subset_dir, one_hot=True, sample_size=None):
     # Read trainval data
     filename_list = os.listdir(subset_dir)
     set_size = len(filename_list)
@@ -57,7 +57,7 @@ def change_file_to_tfrecord(subset_dir, one_hot=True, sample_size=None):
 n_epoch = 3
 batch_size = 2
 
-tr_dataset = change_file_to_tfrecord('./MNIST-data/TestImage')
+tr_dataset = change_file_to_dataset('./MNIST-data/TestImage')
 
 tr_iterator = tr_dataset.make_initializable_iterator()
 
