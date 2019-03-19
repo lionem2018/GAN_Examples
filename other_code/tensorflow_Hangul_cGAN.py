@@ -194,12 +194,12 @@ image_batch, label_batch = tf.train.shuffle_batch(
     min_after_dequeue=1000)
 """
 
-# Make tf.data.Datset
+# Make tf.data.Dataset
 # If you want to use one more parameter for decode, use 'lambda' for data.map
 dataset = tf.data.TFRecordDataset(train_data_files)
 dataset = dataset.map(lambda x: get_image(x, num_classes))
 dataset = dataset.repeat(train_epoch)  # set epoch
-dataset = dataset.shuffle(buffer_size=30)  # for getting data in each buffer size data part
+dataset = dataset.shuffle(buffer_size=3 * batch_size)  # for getting data in each buffer size data part
 dataset = dataset.batch(batch_size)  # set batch size
 
 # Make iterator for dataset
