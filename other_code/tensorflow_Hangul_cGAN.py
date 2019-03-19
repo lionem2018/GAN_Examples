@@ -201,6 +201,7 @@ dataset = dataset.map(lambda x: get_image(x, num_classes))
 dataset = dataset.repeat(train_epoch)  # set epoch
 dataset = dataset.shuffle(buffer_size=3 * batch_size)  # for getting data in each buffer size data part
 dataset = dataset.batch(batch_size)  # set batch size
+dataset = dataset.prefetch(buffer_size=1)  # reduce GPU starvation
 
 # Make iterator for dataset
 iterator = dataset.make_initializable_iterator()
