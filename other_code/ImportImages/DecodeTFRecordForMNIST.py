@@ -2,7 +2,8 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 
-def decode(serialized_example):
+def decode(serialized_example, num):
+
     features = tf.parse_single_example(serialized_example, features={
             'image': tf.FixedLenFeature([], tf.string),
             'label': tf.FixedLenFeature([], tf.string),
@@ -19,7 +20,7 @@ filenames = tf.placeholder(tf.string, shape=[None])
 training_filenames = ['./MNIST-data/tfrecords/train.tfrecord', './MNIST-data/tfrecords/test.tfrecord']
 
 dataset = tf.data.TFRecordDataset(filenames)
-dataset = dataset.map(decode)
+dataset = dataset.map(lambda x: decode(x, 8))
 dataset = dataset.shuffle(buffer_size=30)
 dataset = dataset.batch(32)
 iterator = dataset.make_initializable_iterator()

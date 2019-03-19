@@ -115,6 +115,19 @@ def get_image(serialized_example, num_classes):
     (one-hot vectors).
     """
 
+    # tf.data.Dataset.map() opens and reads files automatically
+    # Just need decoding code for each TFRecord file
+    """
+    # Convert filenames to a queue for an input pipeline.
+    file_queue = tf.train.string_input_producer(files)
+
+    # Create object to read TFRecords.
+    reader = tf.TFRecordReader()
+
+    # Read the full set of features for a single example.
+    key, example = reader.read(file_queue)
+    """
+
     # Parse the example to get a dict mapping feature keys to tensors.
     # image/class/label: integer denoting the index in a classification layer.
     # image/encoded: string containing JPEG encoded image
@@ -170,12 +183,26 @@ print('Processing data...')
 
 tf_record_pattern = os.path.join(DEFAULT_TFRECORDS_DIR, '%s-*' % 'train')
 train_data_files = tf.gfile.Glob(tf_record_pattern)
+
+"""
+label, image = get_image(train_data_files, num_classes)
+
+# Associate objects with a randomly selected batch of labels and images.
+image_batch, label_batch = tf.train.shuffle_batch(
+    [image, label], batch_size=batch_size,
+    capacity=2000,
+    min_after_dequeue=1000)
+"""
+
+# Make tf.data.Datset
+# If you want to use one more parameter for decode, use 'lambda' for data.map
 dataset = tf.data.TFRecordDataset(train_data_files)
 dataset = dataset.map(lambda x: get_image(x, num_classes))
-dataset = dataset.repeat(train_epoch)
-dataset = dataset.shuffle(buffer_size=30)
-dataset = dataset.batch(batch_size)
+dataset = dataset.repeat(train_epoch)  # set epoch
+dataset = dataset.shuffle(buffer_size=30)  # for getting data in each buffer size data part
+dataset = dataset.batch(batch_size)  # set batch size
 
+# Make iterator for dataset
 iterator = dataset.make_initializable_iterator()
 next_element = iterator.get_next()
 
@@ -230,6 +257,9 @@ train_hist['G_losses'] = []
 train_hist['per_epoch_ptimes'] = []
 train_hist['total_ptime'] = []
 
+# Initialize iterator for datset
+sess.run(iterator.initializer)
+
 # training-loop
 np.random.seed(int(time.time()))
 print('training start!')
@@ -240,14 +270,15 @@ for epoch in range(train_epoch):
     epoch_start_time = time.time()
     for iter in range(503370 // batch_size): # training_images//batchsize
 
-        # Get a random batch of images and labels.
-        train_images, train_labels = sess.run(next_element)
+        # Get a random batch of images and labels from dataset
+        train_labels, train_images = sess.run(next_element)
+
         #print('Got data!')
         # Get images, reshape and rescale to pass to D
         train_images = train_images.reshape((batch_size, 4096))
         train_images = train_images*2 - 1
 
-       # update discriminator
+        # update discriminator
         x_ = train_images
         y_ = train_labels
 
