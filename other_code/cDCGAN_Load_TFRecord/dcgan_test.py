@@ -10,8 +10,7 @@ from random import randint
 
 class DCGAN:
     def __init__(self, img_shape, epochs=50000, lr_gen=0.0001, lr_disc=0.0001, z_shape=100, num_classes = 256, batch_size=100, beta1=0.5, epochs_for_sample=500):
-        
-       
+
         self.rows, self.cols, self.channels = img_shape
         self.batch_size = batch_size
         self.epochs = epochs
